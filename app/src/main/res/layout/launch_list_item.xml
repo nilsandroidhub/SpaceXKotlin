@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="100dp"
+    android:background="#ffffffff">
+
+    <TextView
+        android:id="@+id/launch_number"
+        android:layout_alignParentLeft="true"
+        android:paddingLeft="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:layout_centerVertical="true"/>
+
+    <ImageView
+        android:id="@+id/launch_icon"
+        android:layout_toRightOf="@id/launch_number"
+        android:layout_marginStart="10dp"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_centerVertical="true"
+        android:scaleType="fitCenter"/>
+
+    <TextView
+        android:id="@+id/launch_name"
+        android:layout_toRightOf="@id/launch_icon"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:layout_centerVertical="true"/>
+
+    <FrameLayout
+        android:id="@+id/launch_success"
+        android:layout_toRightOf="@id/launch_name"
+        android:paddingLeft="20dp"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_centerVertical="true"/>
+
+    <TextView
+        android:id="@+id/launch_date"
+        android:layout_alignParentRight="true"
+        android:paddingRight="10dp"
+        android:textSize="14sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"/>
+
+</RelativeLayout>
